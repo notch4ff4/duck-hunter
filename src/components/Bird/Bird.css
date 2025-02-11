@@ -1,0 +1,20 @@
+.bird-container {
+  height: 50px;
+  width: auto;
+  position: absolute;
+}
+
+.bird-container img {
+  height: 50px;
+}
+
+.bird-container:hover {
+  cursor: url('../../texture/scope.png'), auto;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Стандартный синтаксис */
+}
