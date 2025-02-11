@@ -1,0 +1,59 @@
+.stats-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.stats-menu {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-content {
+  margin: 20px 0;
+}
+
+.stats-menu h2 {
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.stats-menu p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.restart-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+}
+
+.stats-bober {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}

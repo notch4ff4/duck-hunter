@@ -3,7 +3,7 @@ import BirdRevTexture from '../../texture/duck-rev.png'
 import './Bird.css'
 import { useEffect, useState } from 'react';
 
-function Bird({ style, setBirds, createNewBird, setScore, score }) {
+function Bird({ style }) {
   const [position, setPosition] = useState({
     top: parseFloat(style.top),
     left: parseFloat(style.left),
@@ -12,13 +12,6 @@ function Bird({ style, setBirds, createNewBird, setScore, score }) {
 
   const MOVEMENT_DELAY = 100;
   const SPEED = 2;
-
-  function hit() {
-    setScore(score + 1)
-    console.log(score)
-    setBirds([]);
-    createNewBird();
-  }
 
   useEffect(() => {
     const moveInterval = setInterval(() => {
@@ -55,7 +48,6 @@ function Bird({ style, setBirds, createNewBird, setScore, score }) {
   return (
     <div
       className='bird-container no-select'
-      onClick={hit}
       style={{
         ...style,
         top: `${position.top}%`,

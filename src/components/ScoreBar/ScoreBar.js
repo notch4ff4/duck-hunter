@@ -1,9 +1,9 @@
 import './ScoreBar.css'
 
-function ScoreBar() {
+function ScoreBar({ score }) {
   return (
     <div className="score-bar">
-      <p>Score</p>
+      <p>Очки: {score}</p> 
     </div>
   )
 }

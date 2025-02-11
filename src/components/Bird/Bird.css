@@ -8,10 +8,6 @@
   height: 50px;
 }
 
-.bird-container:hover {
-  cursor: url('../../texture/scope.png'), auto;
-}
-
 .no-select {
   -webkit-user-select: none; /* Chrome/Safari */
   -moz-user-select: none; /* Firefox */
